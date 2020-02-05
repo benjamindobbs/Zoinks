@@ -1,6 +1,3 @@
-function size(){
-var w = window.innerWidth;
-var h = window.innerHeight;
-document.write(w);
-document.write(h);
-}
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
