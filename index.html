@@ -56,13 +56,15 @@ var width = Math.round( window.visualViewport.width)*.5;
 
 
 	if(window.mobilecheck()){
-		document.querySelector('div.photo').style.paddingTop = (height/4) + 'px';
-		document.querySelector('div.photo').style.top = (height)+'px';
-		document.querySelector('div.photo').style.width = (width)+'px';
-		document.querySelector('div.link').style.top = ((height)*.25) +'px';
-		document.querySelector('div.link').style.width = ((width)*.25) +'px';
-		document.querySelector('div.linkBot').style.top = ((height)*.25) +'px';
-		document.querySelector('div.linkBot').style.width = ((width)*.25) +'px';
+		var mHeight = height*2;
+		var mWidth = width*2;
+		document.querySelector('div.photo').style.paddingTop = (mHeight/4) + 'px';
+		document.querySelector('div.photo').style.top = (mHeight)+'px';
+		document.querySelector('div.photo').style.width = (mWidth)+'px';
+		document.querySelector('div.link').style.top = ((mHeight)*.5) +'px';
+		document.querySelector('div.link').style.width = ((mWidth)*.5) +'px';
+		document.querySelector('div.linkBot').style.top = ((mHeight)*.5) +'px';
+		document.querySelector('div.linkBot').style.width = ((mWidth)*.5) +'px';
 		
 	} else{
 		document.querySelector('div.photo').style.paddingTop = (height/8) + 'px';
