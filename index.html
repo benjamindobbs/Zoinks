@@ -26,7 +26,7 @@
 }</style>
 
 <!-- Home photo !-->
-	<div class="photo" style="padding-top:0px;">
+	<div class="photo">
 	<img class = "photo" src ="images/zoink cover raw.png" alt="zoink logo" style="width:45%;height:25%;margin-bottom:2%;">
 	</div>
 <!--Top 2 Buttons-->
@@ -51,8 +51,8 @@
 	
 	<!-- Find the width and height of the viewport !-->
 <script>
-var height = Math.round( window.visualViewport.height)*.6;
-var width = Math.round( window.visualViewport.width)*.6;
+var height = Math.round( window.visualViewport.height);
+var width = Math.round( window.visualViewport.width);
 
 
 	if(window.mobilecheck()){
@@ -62,7 +62,7 @@ var width = Math.round( window.visualViewport.width)*.6;
 		document.querySelector('div.link').style.width = (width)*.5+'px';
 		document.querySelector('div.linkBot').style.top = (height)*.5+'px';
 		document.querySelector('div.linkBot').style.width = (width)*.5+'px';
-		document.querySelector('div.photo').style.paddingTop = (height/2) - (height*.25) + 'px';
+		document.querySelector('div.photo').style.paddingTop = (height/4) + 'px';
 	} else{
 		document.querySelector('div.photo').style.top =.75 *(height)+'px';
 		document.querySelector('div.photo').style.width =.75 * (width)+'px';
